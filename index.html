@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Metadata Tags -->
+    <title>SatinCake - Landing Page</title>
     <meta name="description" content="Personal Landing Page for Satin Cake, a software developer and entrepreneur and one of the owners of Void Assistant.">
     <meta name="keywords" content="Satin Cake, software developer, entrepreneur, web development, programming">
     <meta name="author" content="Satin Cake">
@@ -112,7 +113,7 @@
             <a href="mailto:kt.avs.studio@allurevoid.net" target="_blank"aria-label="Link to Email SatinCake"><i class="far fa-envelope"></i></a>
             <a href="https://www.youtube.com/@satincake" target="_blank"aria-label="Link to SatinCake's Youtube"><i class="fab fa-youtube"></i></a>
             <a href="https://github.com/SatinCake" target="_blank"aria-label="Link to SatinCake's Github"><i class="fab fa-github"></i></a>
-            <a href="https://www.tiktok.com/@allurevoidstudios" target="_blank"aria-label="Link to SatinCake's TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.tiktok.com/@satincake" target="_blank"aria-label="Link to SatinCake's TikTok"><i class="fab fa-tiktok"></i></a>
             <a href="https://twitter.com/satincake" target="_blank"aria-label="Link to SatinCake's Twitter"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
@@ -123,5 +124,29 @@
   <footer>
     <p>© 2023 SatinCake. All rights reserved.</p>
   </footer>
+
+  <div id="cookieConsentBanner">
+    <p>This website uses cookies to ensure you get the best experience on our website. By continuing to browse the site, you are agreeing to our use of cookies. <a href="#" id="cookieSettingsLink" aria-label="Link to edit your Cookie Settings">Cookie Settings</a></p>
+    <button id="acceptCookiesButton" aria-label="Agree to Cookies Button">Okay</button>
+  </div>
+
+  <div id="cookieSettingsPopup">
+    <h3 class="popup-title">Cookie Settings</h3>
+    <p class="popup-text">Please select your preferences for cookies:</p>
+    <label class="popup-label">
+      <input type="checkbox" name="analytics" checked>
+      <span class="checkmark"></span>
+      Enable Analytics Cookies
+    </label>
+    <label class="popup-label">
+      <input type="checkbox" name="marketing" checked>
+      <span class="checkmark"></span>
+      Enable Marketing Cookies
+    </label>
+    <button id="saveSettingsButton" aria-label="Save Cookie Settings Button" class="popup-button">Save Settings</button>
+  </div>
+
+  <script src="./cookieConsent.js"></script>
+  
 </body>
 </html>
