@@ -45,7 +45,14 @@ function setCookie(name, value, days) {
   
     if (hasConsentedToCookies()) {
       hideCookieBanner();
+      var script = document.createElement('script');
+      script.defer = true;
+      script.src = "https://metrics.satincake.com/js/script.js";
+      script.dataset.domain = "satincake.com";
+      document.body.appendChild(script);
     }
+
+      
   });
   
   const cookieSettingsPopup = document.getElementById('cookieSettingsPopup');
